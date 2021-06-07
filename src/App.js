@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { HashRouter, Link, Route, Switch } from 'react-router-dom';
 
 import Todos from './components/todos';
 import Navbar from './components/navbar';
@@ -18,7 +18,7 @@ function App() {
       <Navbar />
      
      {/* <Todos/> */}
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route path="/store">
           <Store />
@@ -34,7 +34,7 @@ function App() {
         </Route>
         
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
     </div>
   );
 }
