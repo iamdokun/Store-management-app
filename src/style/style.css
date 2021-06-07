@@ -1,0 +1,79 @@
+/* ******** NavBar *********** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(90deg, rgba(69,84,108, 1), rgba(255,251,203, 1) 100%);
+}
+.head-wrap {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.logo img {
+    width: 100%;
+}
+.nav-link a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* *********** Login ********** */
+.form-wrap {
+    width: 30%;
+    margin-top: 6rem;
+}
+
+
+
+/* ********* Stock Manager **********  */
+.stock-wrap {
+    width: 70%;
+}
+
+
+/* *********** Cashier ***********  */
+.cashier-wrap {
+    width: 50%;
+}
+.receipt-wrap {
+    width: 35%;
+    margin: auto;
+    border: 2px dotted #000;
+}
+.receipt-wrap ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+@media (max-width: 400px) {
+    
+
+    /* *********** Login *********** */
+    .form-wrap {
+        width: 85%;
+        margin-top: 6rem;
+    }
+
+    /* ******** Stock *********** */
+    .stock-wrap {
+        width: 85%;
+    }
+
+    /* *********** Cashier ***********  */
+    .cashier-wrap {
+        width: 85%;
+    }
+    .receipt-wrap {
+        width: 85%;
+        margin: auto;
+        border: 2px dotted #000;
+    }
+}
